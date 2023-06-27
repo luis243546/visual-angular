@@ -1,0 +1,27 @@
+
+<h2 style="text-align: center;">LISTAR PRODUCTO</h2>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Codigo</th>
+          <th>Nombre</th>
+          <th>Marca</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: white;">
+        <tr *ngFor="let dato of productos">
+          <td>{{dato.codigo}}</td>
+          <td>{{dato.nombre}}</td>
+          <td>{{dato.marca}}</td>
+          <td>{{dato.cantidad}}</td>
+          <td>{{dato.precio}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
